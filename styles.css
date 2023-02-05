@@ -159,12 +159,12 @@ nav ul li a:hover::after{
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    gap: 40px;
     margin-top: 50px;
 
 }
 .services-list div{
-    background: rgb(58, 56, 56);
+    background: rgb(50, 35, 35);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -191,3 +191,31 @@ nav ul li a:hover::after{
     background-color: rgb(41, 37, 37);
     transform: translateY(-10px);
 }
+
+/* -------------------------Portfolio------------------- */
+
+#portfolio{
+    padding: 50px 0;
+
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+
+}
+
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
