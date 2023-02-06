@@ -1,47 +1,101 @@
+/* Reset ------------------  */
+
 *{
-    font-family: 'Segoe UI',sans-serif;
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
+}
+
+a{
     text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s linear;
+    color: inherit;
+}
+
+/* Keyframes --------------  */
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 
 }
 
-/* --------------------css Variables  */ 
 
-:root{
-    --white:white;
-    --dark-gray:grey;
-    --light-grey:rgb(143, 132, 132);
-    --dark-bg:rgb(67, 65, 65);
-    --light-bg:rgb(170, 161, 161);
-    --yellow:rgb(225, 225, 119);
-    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1)   
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ Base Styles  */ 
+
+body{
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.color{
+    height: 1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, rgba(255,230,0,0.21), black);
+    position: absolute;
+    top: -400px;
+    left: 15%;
+    z-index: -1;
+
+}
+
+/* ------------header  */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px 62px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fade-down 0.5s 0.4s backwards;
+}
+
+.btn{
+    background-color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: all 0.4s;
+    animation: fade-down 0.5s 0.4s backwards;
+
+}
+
+.btn:hover{
+    transform: scale(1.15);
     
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-}
+.btn--color{
 
-body{
-    background-color: var(--dark-bg);
-}
-
-section{
-    padding: 5rem 9%;
-}
-
-/* ------------------------home */
-
-.home{
-    height: 100vh;
-    background-image: ;
 }
