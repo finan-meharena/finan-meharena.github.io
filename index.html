@@ -1,84 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://img.icons8.com/color-glass/512/document-1.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color-glass/512/document-1.png"
+    />
     <title>Portfolio.</title>
-
 
     <!-- ------------------google fonts  -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- --------------------------- local css -------------------------------->
-    <link rel="stylesheet" href="styles.css">
+    <!-- --------------------------- local css -------------------------------->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-
-</head>
-
-<body>
-
-    <div class="color">
-
-    </div>
-
+  <body>
+    <div class="color"></div>
 
     <!-- ----------------- header  -->
 
     <header class="header">
-        <img src="https://images.unsplash.com/photo-1570211776091-c19f426d37af?auto=format&fit=crop&w=70&q=100" alt="" class="logo">
+      <img
+        src="https://images.unsplash.com/photo-1570211776091-c19f426d37af?auto=format&fit=crop&w=70&q=100"
+        alt=""
+        class="logo"
+      />
 
-        <a href="mailto:finanmeharenak@gmail.com" class="btn btn--contact">Contact Me</a>
+      <a href="mailto:finanmeharenak@gmail.com" class="btn btn--contact"
+        >Contact Me</a
+      >
     </header>
-
 
     <!-- ------------main  -->
 
     <div class="main">
-        <section class="intro">
-            <h1 class="first-heading"> Hello World!</h1>
-            <p class="text">I'm <span class="name"> Finan Meharena</span>, <i>A Full-Stack Engineer;</i></p>
-        </section>
+      <section class="intro">
+        <h1 class="first-heading">Hello World!</h1>
+        <p class="text">
+          I'm <span class="name"> Finan Meharena</span>,
+          <i>A Full-Stack Engineer;</i>
+        </p>
+      </section>
 
-            
-    <!-- -------------------work  -->
+      <!-- -------------------work  -->
 
-    <section class="work">
+      <section class="work">
         <div class="top">
-            <h2 class="second-heading">My Work</h2>
-            <ul class="filters">
-                <li class="filter-item">
-                    <button class="filter-btn filter-btn--active">All</button>
-                </li> 
-                <li class="filter-item">
-                    <button class="filter-btn">Front-End</button>
-                </li>
-                <li class="filter-item">
-                    <button class="filter-btn">Back-End</button>
-                </li>
-                <li class="filter-item">
-                    <button class="filter-btn">Full-Stack</button>
-                </li>
-
-        
-            </ul>
+          <h2 class="second-heading">My Work</h2>
+          <ul class="filters">
+            <li class="filter-item">
+              <button class="filter-btn filter-btn--active">All</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Front-End</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Back-End</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn">Full-Stack</button>
+            </li>
+          </ul>
         </div>
 
+    <!-- -----------------------------grid  -->
+
         <section class="grid">
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">rmtDev</h3>
+              <p class="description">
+                A full-stack job board for remote dev jobs.
+              </p>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">React</li>
+                <li class="technology">Node.js</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1545235617-9465d2a55698?fit=crop&h=954&w=600&q=100"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">CorpComment</h3>
+              <p class="description">
+                Full-stack startup project built with the MERN-stack
+              </p>
+              <ul class="technologies">
+                <li class="technology">React</li>
+                <li class="technology">Node.js</li>
+                <li class="technology">MongoDB</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?fit=crop&h=666&w=600&q=100"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">BetterPhotos</h3>
+              <p class="description">
+                Website for a photographer community (front end)
+              </p>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">JavaScript</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?fit=crop&h=954&w=600&q=100"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">SocialEditor</h3>
+              <p class="description">
+                Front end for a graphic design editor for social media
+              </p>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">React</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1547119957-637f8679db1e?fit=crop&h=650&w=600&q=100"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Dentalist</h3>
+              <p class="description">
+                Complete back end for dental practice management app
+              </p>
+              <ul class="technologies">
+                <li class="technology">Node.js</li>
+                <li class="technology">Express</li>
+                <li class="technology">MongoDB</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?fit=crop&h=938&w=600&q=100"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Evento</h3>
+              <p class="description">
+                Event organizing app for corporations (back end)
+              </p>
+              <ul class="technologies">
+                <li class="technology">Node.js</li>
+                <li class="technology">MongoDB</li>
+              </ul>
+            </section>
+            <img
+              src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?fit=crop&h=650&w=600&q=100"
+              alt="Project"
+              class="grid-img"/>
+          </div>
 
+          <div class="fade">
+            
+          </div>
         </section>
-    </section>
-
-
+      </section>
     </div>
-
-
 
     <!-- ------------------- local js ----------------------- -->
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
