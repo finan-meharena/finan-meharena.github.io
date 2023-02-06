@@ -11,6 +11,17 @@ a{
     color: inherit;
 }
 
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+}
+
 /* Keyframes --------------  */
 
 @keyframes fade-down {
@@ -97,6 +108,7 @@ body{
     font-weight: 500;
     text-transform: capitalize;
     color: black;
+    letter-spacing: 0.5px;
     padding: 10px 20px;
     border-radius: 5000px;
     transition: all 0.4s;
@@ -145,4 +157,53 @@ body{
 }
 .name{
     color: rgb(255, 255, 4);
+}
+
+/* ------------------work  */ 
+
+.work{
+    margin-top: 60px;
+
+
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-heading{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.filters{
+    display: flex;
+    column-gap: 40px;
+
+}
+
+
+.filter-item{
+
+}
+
+.filter-btn{
+    opacity: 0.6;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.filter-btn:hover{
+    opacity: 1;
+}
+
+.filter-btn--active{
+    opacity: 1;
+
 }
