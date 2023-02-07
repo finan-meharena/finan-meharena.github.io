@@ -63,8 +63,6 @@ button{
 }
 
 
-
-
 /* ------------ Base Styles  */ 
 
 body{
@@ -146,7 +144,7 @@ html{
     padding: 16px 32px;
     font-size: 16px;
     position:fixed;
-    bottom: 30px;
+    bottom: 60px;
     left: calc(50% - 96px);
     z-index: 110;
     box-shadow: 0 6px 23px rgba(0, 0, 0, .45);
@@ -384,4 +382,25 @@ html{
 .link-img{
     width: 20px;
     height: 20px;
+}
+
+/* -------------footer  */ 
+
+.footer{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 15px 0 20px;
+    border-top: 1px solid rgb(184, 182, 182);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.copyright{
+    font-size: 12px;
+}
+
+.email{
+    font-size: 12px;
 }
