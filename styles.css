@@ -122,8 +122,23 @@ html{
     transform: scale(1.15);
 }
 
+.btn--contact{
+    transform: fade-down 0.5s 0.4s backwards;
+}
+
 .btn--color{
 
+}
+
+.btn--download{
+    padding: 16px 32px;
+    font-size: 16px;
+    position:fixed;
+    bottom: 30px;
+    left: calc(50% - 96px);
+    z-index: 110;
+    box-shadow: 0 6px 23px rgba(0, 0, 0, .45);
+    animation: fade-up 0.5s 0.4s backwards;
 }
 
 /* -----------------Main  */ 
