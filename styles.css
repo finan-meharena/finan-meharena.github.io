@@ -95,6 +95,7 @@ body::-webkit-scrollbar{
 html{
     --default-opacity: 0.2;
     --hover-opacity: 0.1;
+    overflow-x: hidden;
 }
 
 /* ------------header  */
@@ -149,6 +150,7 @@ html{
     z-index: 110;
     box-shadow: 0 6px 23px rgba(0, 0, 0, .45);
     animation: fade-up 0.5s 0.4s backwards;
+     
 }
 
 /* -----------------Main  */ 
@@ -295,7 +297,6 @@ html{
     width: 100%;
     transform: scale(1.1);
     transition: all 0.4s;
-
     
 }
 
@@ -403,4 +404,113 @@ html{
 
 .email{
     font-size: 12px;
+}
+
+
+/* ----------------media queries  */ 
+
+@media (max-width:1267px){
+
+    .header{
+        padding: 25px;
+        position: absolute;
+    }
+    .links{
+        transform: initial;
+        right: initial;
+        top: 33px;
+        left: 82px;
+        display: flex;
+        animation-name: fade-down;
+        position: absolute;
+
+    }
+
+    .link-item:not(:last-child){
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .intro{
+        padding-top: 90px;
+    }
+
+    .work{
+        margin-top: 35px;
+    }
+
+    .main{
+        margin-bottom: 35px;
+    }
+
+    .filters{
+        display: none;
+    }
+}
+
+@media (max-width:830px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px 450px;
+        gap: 15px;
+    }
+
+    .project:nth-child(1){
+        grid-row: 1 / 2;
+    }
+
+    .project:nth-child(3){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .project:nth-child(4){
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .project:nth-child(5){
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .project:nth-child(6){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .btn--download{
+        /* padding: 10px; */
+        transform: scale(0.8);
+        
+    }
+
+    .first-heading{
+        font-size: 30px;
+    }
+    
+ 
+
+}
+
+@media (max-width: 520px){
+    .top{
+        margin-bottom: 20px;
+    }
+
+    .copyright{
+        font-size: 11px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 500px);
+    }
+
+    .grid .project{
+        grid-column: initial;
+        grid-row: initial;
+    }
+    
 }
